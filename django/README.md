@@ -94,6 +94,23 @@ and host on the go whenever we want.
 Thats it.
 
 
+## List of tasks need to be done
+1. create a new user
+2. give sudo privliges, setup home dir and password
+3. setup ssh access for newly created user
+4. create base dirs (Code and Installs)
+5. installation of server basics dependencies like nginx, pip, virtualenv
+6. installation of db mysql, dbsqlite, postgres, redis and mongodb
+7. cloning repo
+8. create virtual env and its packages
+9. setting and connecting database in the respective db
+10. running up migrations
+11. intial dump and load data 
+12. installing gunicorn or uwsgi and supervisor
+13. setting up supervisor config with logs files and run it
+14. setting up nginx config with its log files and run it
+15. creating iptable rules 
+
 ## Built With
 
 * [Ansible](https://ansible.com/) - Simple IT automation tool
@@ -107,6 +124,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Authors
 
 * **Jitendra Varma** - DevOps at  - [Fafadiatech](https://fafadiatech.com/)
+* **Yogesh Panchal** - Sr DevOps at  - [Fafadiatech](https://fafadiatech.com/)
 
 
 ## License

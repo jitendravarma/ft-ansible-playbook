@@ -1,0 +1,82 @@
+# wirte your varibales here
+
+# host user name 
+- user_name: root
+
+# host name to run task on in /etc/ansible/hosts
+- host_name: django-server
+
+# user name to create
+- user_to_create: ubuntu
+
+# newly create ubuntu user's password
+- ubuntu_password: mysecret
+
+# general build dependency
+build_dependencies:
+  - build-essential
+  - git
+  - gcc
+  - nginx
+  - openssl
+  - libtool
+  - sqlite3
+  - libgle3
+  - autoconf
+  - libpq-dev
+  - net-tools
+  - libqtgui4
+  - python-dev
+  - python-pip
+  - libffi-dev
+  - libssl-dev
+  - zlib1g-dev
+  - libqt4-xml
+  - pkg-config
+  - libqtcore4
+  - libqt4-test
+  - libxml2-dev
+  - libblas-dev
+  - libqt4-dbus
+  - qt4-designer
+  - libsasl2-dev
+  - libldap2-dev
+  - libxslt1-dev
+  - libqt4-script
+  - qt4-dev-tools
+  - libqt4-network
+  - libasound2-dev
+  - libatlas-base-dev
+
+- msql_dependencies:
+  - mysql-server-5.6
+  - mysql-client-5.6
+  - libmysqlclient-dev
+
+- postgres_dependencies:
+  - libpq-dev
+  - postgresql-common
+  - postgresql-9.4
+  - postgresql-contrib-9.4
+
+- sqlite3_dependencies:
+  - sqlite3
+  - libsqlite3-dev
+
+- mongo_db_dependencies:
+  - mongodb-server
+  - mongodb-clients
+  - mongodb
+
+- redis_dependencies:
+  - redis-server
+
+# application database name
+- db_name: db_name
+
+# application git url
+- git_url:  https://git@bitbucket.org/repo.git
+
+# git password
+- git_password: mysecret2
+
